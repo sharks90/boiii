@@ -104,7 +104,7 @@ end
 CoD.LobbyButtons.MP_STATS = {
 	stringRef = "STATS",
 	action = function ( self, element, controller, param, menu )
-    SetPerControllerTableProperty( controller, "disableGameSettingsOptions", true )
+    SetPerControllerTableProperty( controller, "disableGameSettingsOptions", false )
     OpenPopup( menu, "MPStatsMenu", controller )
   end,
 	customId = "btnMPStats"
